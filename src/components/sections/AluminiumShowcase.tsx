@@ -10,7 +10,6 @@ import {
   Sparkles,
   FlaskConical,
   Home,
-  MapPin,
 } from "lucide-react";
 
 const ALUMINIUM_SERVICES = [
@@ -87,11 +86,6 @@ export default function AluminiumShowcase() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="space-y-4"
           >
-            <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-orange-800 bg-orange-100 border border-orange-200 px-3.5 py-1.5 rounded-full">
-              <MapPin className="w-3.5 h-3.5" />
-              Berhampur, Odisha
-            </span>
-
             <h2 className="text-3xl sm:text-4xl md:text-[2.75rem] font-black text-slate-900 leading-tight font-display tracking-tight">
               Aluminium Powder Coating &{" "}
               <span className="text-orange-700">Anodizing</span>

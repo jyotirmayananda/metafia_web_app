@@ -29,9 +29,6 @@ export default function Agro() {
 
         {/* Heading */}
         <div className="space-y-4 max-w-3xl">
-          <span className="inline-block text-xs font-bold uppercase tracking-widest text-slate-500 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200">
-            Corporate Expansion
-          </span>
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight font-display">
             Agro Division
           </h1>

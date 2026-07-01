@@ -215,9 +215,6 @@ export default function Home() {
             
             {/* Context Text */}
             <div className="lg:col-span-1 space-y-6">
-              <span className="text-xs font-extrabold uppercase tracking-widest text-slate-500">
-                Proven Infrastructure
-              </span>
               <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight font-display">
                 Engineered for High-Reliability Delivery
               </h2>
@@ -315,9 +312,6 @@ export default function Home() {
       <section className="py-24 md:py-32 bg-slate-50 border-t border-slate-200/60 relative overflow-hidden">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12 space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-4">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-slate-500">
-              Operations Showcase
-            </span>
             <h2 className="text-3xl font-extrabold text-slate-900 font-display">
               Gallery of Precision
             </h2>

@@ -48,7 +48,6 @@ export default function Contact() {
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Title */}
         <SectionHeading
-          badge="Connect With Us"
           title={
             <>
               Partner with <br />

@@ -18,7 +18,6 @@ export default function About() {
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
             <SectionHeading
-              badge="About Metafia Industries"
               title={
                 <>
                   Pioneering Industrial <br />
@@ -116,9 +115,6 @@ export default function About() {
           </div>
 
           <div className="lg:col-span-7 space-y-6">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-slate-500">
-              Executive Leadership Spotlight
-            </span>
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 font-display">
               A Vision Guided by Structural Integrity
             </h2>
@@ -142,9 +138,6 @@ export default function About() {
         {/* 4. FACILITIES SHOWCASE */}
         <section className="space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-4">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-slate-500">
-              Our Infrastructure
-            </span>
             <h2 className="text-3xl font-extrabold text-slate-900 font-display">
               Regional Processing Facilities
             </h2>
@@ -156,12 +149,12 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                url: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=600&auto=format&fit=crop",
+                url: "/images/powder-coating.png",
                 title: "Powder Coating Station",
                 desc: "Electrostatic paint curing area"
               },
               {
-                url: "https://images.unsplash.com/photo-1542060748-10c28b629f6f?q=80&w=600&auto=format&fit=crop",
+                url: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=600&auto=format&fit=crop",
                 title: "Biofuel Tank Terminal",
                 desc: "B100 bulk storage silos"
               },
@@ -197,9 +190,6 @@ export default function About() {
         {/* 5. LEADERSHIP BAND (Minimalist Governance) */}
         <section className="space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-4">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-slate-500">
-              Our Governance
-            </span>
             <h2 className="text-3xl font-extrabold text-slate-900 font-display">
               Professional Board of Administration
             </h2>

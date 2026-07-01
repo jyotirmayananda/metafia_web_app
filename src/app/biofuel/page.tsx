@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { 
-  Flame, Leaf, ShieldCheck, Heart, Wind, HardHat, 
+  Leaf, ShieldCheck, Heart, Wind, HardHat, 
   Sprout, Landmark, Factory, CheckCircle2, AlertCircle
 } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -110,10 +110,6 @@ export default function Biofuel() {
         {/* 1. HERO SECTION */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-500 text-xs font-bold tracking-widest uppercase">
-              <Flame className="w-3.5 h-3.5 fill-slate-400" />
-              Green Energy Division
-            </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-900 tracking-tight leading-none font-display">
               100% Pure B100 <br />
               <span className="text-amber-600 text-highlight">Biodiesel.</span>
@@ -165,7 +161,6 @@ export default function Biofuel() {
         {/* 2. BENEFITS GRID */}
         <section className="space-y-12">
           <SectionHeading
-            badge="Product Specifications"
             title="Engineered Benefits of Metafia B100"
             description="Our biodiesel performs at high thermal efficiency while preserving your logistics and power generation infrastructure."
             centered
@@ -193,7 +188,6 @@ export default function Biofuel() {
         {/* 3. WHO USES IT SEGMENTS */}
         <section className="space-y-12 bg-white border border-slate-200/80 rounded-3xl p-8 md:p-16 shadow-sm">
           <SectionHeading
-            badge="Target Sectors"
             title="Powering Diverse Commercial Fleets"
             description="From industrial plant generation to civil infrastructure, Metafia biofuel delivers stable energy outputs."
           />
@@ -239,9 +233,6 @@ export default function Biofuel() {
           </div>
 
           <div className="lg:col-span-7 space-y-6">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-slate-500">
-              Operations Guide
-            </span>
             <h2 className="text-3xl font-extrabold text-slate-900 font-display">
               Storage & Fuel Handling Standards
             </h2>

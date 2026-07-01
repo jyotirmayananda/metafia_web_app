@@ -107,9 +107,6 @@ export default function OurProductsSection() {
           transition={{ duration: 0.7 }}
           className="text-center max-w-3xl mx-auto space-y-5"
         >
-          <span className="inline-block text-xs font-bold uppercase tracking-widest text-blue-700 border border-blue-200 px-3.5 py-1.5 rounded-full bg-blue-50/80">
-            Our Products
-          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 leading-tight font-display tracking-tight">
             We Focused On Modern World And{" "}
             <span className="text-orange-700">Interior Design</span>

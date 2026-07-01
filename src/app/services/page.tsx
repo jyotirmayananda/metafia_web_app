@@ -145,7 +145,6 @@ export default function Services() {
 
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 space-y-20 md:space-y-28">
         <SectionHeading
-          badge="Our Products"
           title={
             <>
               We Focused On Modern World And <br />
@@ -197,18 +196,6 @@ export default function Services() {
                     isEven ? "lg:order-2" : "lg:order-1"
                   }`}
                 >
-                  <span
-                    className={`inline-block text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full border ${
-                      isMetal
-                        ? "text-orange-800 bg-orange-50 border-orange-200"
-                        : service.badge.includes("Energy")
-                          ? "text-amber-700 bg-amber-50 border-amber-200"
-                          : "text-blue-700 bg-blue-50 border-blue-200"
-                    }`}
-                  >
-                    {service.badge}
-                  </span>
-
                   <h3 className="text-2xl md:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
                     {service.title}
                   </h3>
@@ -257,9 +244,6 @@ export default function Services() {
         {/* Testimonials */}
         <section className="py-16 border-t border-slate-200 space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-4">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-slate-500">
-              Client Feedback
-            </span>
             <h2 className="text-3xl font-extrabold text-slate-900 font-display">
               Trusted Across Odisha
             </h2>
