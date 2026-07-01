@@ -17,12 +17,12 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Metafia Industries | Powering Industry. Shaping Metal. Biofuels & Aluminium Solutions",
-  description: "Metafia Industries Pvt Ltd is a diversified industrial leader based in Odisha, India, specializing in petrochemicals, B100 biofuel distribution, and precision aluminium anodizing and extrusion solutions.",
+  title: "Metafia Industries | Powering Industry. Shaping Metal. Aluminium Solutions",
+  description: "Metafia Industries Pvt Ltd is a diversified industrial leader based in Odisha, India, specializing in precision aluminium powder coating, anodizing, interior metalwork, and agro products.",
   metadataBase: new URL("https://metafiaindustries.com"),
   openGraph: {
-    title: "Metafia Industries | Petrochemicals, Biofuels & Aluminium Solutions",
-    description: "Eco-friendly B100 biofuel, premium petrochemical distribution, and architectural aluminium coating and extrusions.",
+    title: "Metafia Industries | Aluminium Coating & Interior Design Solutions",
+    description: "Architectural aluminium powder coating, anodizing, acid treatment, interior metalwork, and agro products from Berhampur, Odisha.",
     url: "https://metafiaindustries.com",
     siteName: "Metafia Industries",
     locale: "en_IN",

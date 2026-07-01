@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Flame, Layers, ShieldCheck, Truck, Zap, Activity } from "lucide-react";
+import { ArrowRight, Layers, ShieldCheck, Zap, Wheat, Sparkles } from "lucide-react";
 import StatCounter from "@/components/ui/StatCounter";
 import HeroAnimatedBackground from "@/components/layout/HeroAnimatedBackground";
 import OurProductsSection from "@/components/sections/OurProductsSection";
@@ -13,19 +13,6 @@ export default function Home() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const heroGridCards = [
-    {
-      title: "Biofuel & Energy Portal",
-      badge: "Hydrocarbons",
-      accent: "amber" as const,
-      icon: Flame,
-      summary: "Licensed bulk distribution of eco-friendly B100 biodiesel, LDO, MTO, and MHO industrial fuels.",
-      specs: [
-        { label: "CO2 Reduction", value: "~75%" },
-        { label: "Sulfur Content", value: "0% Pure" },
-        { label: "Viscosity Rating", value: "Standard" }
-      ],
-      link: "/biofuel"
-    },
     {
       title: "Aluminium Division",
       badge: "Powder Coating & Anodizing",
@@ -40,17 +27,17 @@ export default function Home() {
       link: "/services#aluminium-division"
     },
     {
-      title: "Shipment Logistics Hub",
-      badge: "Supply Chain",
-      accent: "blue" as const,
-      icon: Truck,
-      summary: "GPS-tracked road tanker dispatch fleet delivering continuous fuel capacity lines 24/7.",
+      title: "Agro Division",
+      badge: "Sustainable Inputs",
+      accent: "amber" as const,
+      icon: Wheat,
+      summary: "Expanding into agricultural inputs and infrastructure solutions to support Odisha's farming and rural supply chains.",
       specs: [
-        { label: "Fleet Dispatch", value: "24/7 Line" },
-        { label: "Supply Security", value: "99.9%" },
-        { label: "Regional Reach", value: "Odisha-wide" }
+        { label: "Focus", value: "Agro Supply" },
+        { label: "Capacity", value: "Bulk Scale" },
+        { label: "Region", value: "Odisha-wide" }
       ],
-      link: "/contact"
+      link: "/agro"
     }
   ];
 
@@ -66,9 +53,9 @@ export default function Home() {
           <div className="max-w-4xl mx-auto space-y-6">
             <h1 className="hero-headline text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-slate-900 leading-[1.08] font-display">
               Strength in Metal.<br />
-              Core in{" "}
+              Built on{" "}
               <span className="relative inline-block text-blue-800">
-                Energy.
+                Precision.
                 <span
                   aria-hidden
                   className="absolute -bottom-1 left-0 w-full h-[5px] rounded-full bg-gradient-to-r from-blue-600 via-blue-500 to-amber-500"
@@ -77,7 +64,7 @@ export default function Home() {
             </h1>
 
             <p className="hero-subtext text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-bold">
-              Powering heavy manufacture and logistics pipelines across Odisha with certified biofuels and high-durability aluminium anodizing.
+              Powering manufacture and construction across Odisha with high-durability aluminium powder coating and anodizing.
             </p>
           </div>
 
@@ -101,7 +88,7 @@ export default function Home() {
           </div>
 
           {/* 3-Card Technical Blueprint Grid */}
-          <div id="blueprint-grid" className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 text-left">
+          <div id="blueprint-grid" className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-12 text-left max-w-3xl mx-auto">
             {heroGridCards.map((card, index) => {
               const Icon = card.icon;
               const isHovered = hoveredCard === index;
@@ -216,11 +203,11 @@ export default function Home() {
             {/* Context Text */}
             <div className="lg:col-span-1 space-y-6">
               <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight font-display">
-                Engineered for High-Reliability Delivery
+                Engineered for Precision Finishing
               </h2>
               <p className="text-slate-600 leading-relaxed text-sm md:text-base font-semibold">
                 Operating out of Southern Odisha, Metafia Industries has earned an impeccable track record. 
-                Our strict testing parameters ensure that every batch of B100 biofuel and every millimetre of aluminium extrusion meets exact specifications.
+                Our strict testing parameters ensure that every powder coat and every millimetre of aluminium extrusion meets exact specifications.
               </p>
               <div className="pt-2">
                 <Link
@@ -238,35 +225,34 @@ export default function Home() {
               {/* Stat 1 */}
               <div className="glass-card p-8 rounded-2xl relative border border-slate-200 bg-white overflow-hidden shadow-sm">
                 <div className="absolute top-4 right-4 text-slate-200">
-                  <Activity className="w-12 h-12 stroke-[1.5]" />
+                  <Layers className="w-12 h-12 stroke-[1.5]" />
                 </div>
                 <div className="text-slate-400 text-xs font-bold uppercase tracking-wider">
-                  Carbon Reduction
+                  Anodized Finishes
                 </div>
                 <div className="text-4xl md:text-5xl font-black text-slate-900 mt-4 flex items-baseline font-display">
-                  <span>~</span>
-                  <StatCounter value={75} />
-                  <span className="text-slate-500 ml-1">%</span>
+                  <StatCounter value={10} />
+                  <span className="text-slate-500 ml-1">–25 μ</span>
                 </div>
                 <p className="text-xs text-slate-500 mt-2 leading-relaxed font-semibold">
-                  B100 biofuel delivers a massive reduction in net greenhouse emissions compared to fossil diesel.
+                  Controlled oxide film thickness for durable architectural and industrial aluminium profiles.
                 </p>
               </div>
 
               {/* Stat 2 */}
               <div className="glass-card p-8 rounded-2xl relative border border-slate-200 bg-white overflow-hidden shadow-sm">
                 <div className="absolute top-4 right-4 text-slate-200">
-                  <Truck className="w-12 h-12 stroke-[1.5]" />
+                  <Sparkles className="w-12 h-12 stroke-[1.5]" />
                 </div>
                 <div className="text-slate-400 text-xs font-bold uppercase tracking-wider">
-                  Delivery Reliability
+                  Anodized Tones
                 </div>
                 <div className="text-4xl md:text-5xl font-black text-slate-900 mt-4 flex items-baseline font-display">
-                  <StatCounter value={99} />
-                  <span className="text-slate-500">.9%</span>
+                  <StatCounter value={4} />
+                  <span className="text-slate-500 ml-1">+</span>
                 </div>
                 <p className="text-xs text-slate-500 mt-2 leading-relaxed font-semibold">
-                  24/7 dedicated tanker logistics fleet ensures no fuel supply interruption for heavy industries.
+                  Natural, bronze, black, and champagne finishes for architectural aluminium profiles.
                 </p>
               </div>
 
@@ -300,7 +286,7 @@ export default function Home() {
                   <span className="text-slate-500 ml-1">+</span>
                 </div>
                 <p className="text-xs text-slate-500 mt-2 leading-relaxed font-semibold">
-                  Decades of collective leadership expertise across metalwork, logistics, and resource trading.
+                  Decades of collective leadership expertise across metalwork, finishing, and resource trading.
                 </p>
               </div>
             </div>
@@ -316,7 +302,7 @@ export default function Home() {
               Gallery of Precision
             </h2>
             <p className="text-sm text-slate-500 font-semibold">
-              Explore actual high-resolution captures across our aluminium coating lines, biofuel transport, and metallurgical laboratories.
+              Explore high-resolution captures across our aluminium coating lines, interior metalwork, and quality labs.
             </p>
           </div>
 
@@ -328,9 +314,9 @@ export default function Home() {
                 caption: "Architectural profiles waiting for anodizing treatment"
               },
               {
-                url: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop",
-                title: "Biofuel Transport Fleet",
-                caption: "Specialized tanker trucks delivering pure B100"
+                url: "/images/aluimg/2.jpg",
+                title: "Anodizing Line",
+                caption: "Aluminium profiles in controlled oxide finishing"
               },
               {
                 url: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=600&auto=format&fit=crop",
@@ -348,9 +334,9 @@ export default function Home() {
                 caption: "Micro-thickness testing on coating samples"
               },
               {
-                url: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop",
-                title: "Supply Chain Operations",
-                caption: "Integrated logistics yard for bulk deliveries"
+                url: "/images/wd/1004.jpg",
+                title: "Wood Interior Work",
+                caption: "Custom interior panels and decorative finishes"
               }
             ].map((img, idx) => (
               <div key={idx} className="group relative h-[260px] rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-white">
@@ -381,8 +367,8 @@ export default function Home() {
             Ready to Optimize Your Industry Operations?
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base font-semibold">
-            Consult with our engineering and fuel distribution experts today. 
-            Receive tailored pricing matrices for bulk B100 biodiesel supply or custom extrusion finishing.
+            Consult with our engineering and finishing experts today.
+            Receive tailored pricing for powder coating, anodizing, or custom extrusion work.
           </p>
           <div className="pt-4">
             <Link

@@ -32,9 +32,8 @@ export default function About() {
                 as critical pillars for the regional economy.
               </p>
               <p>
-                From clean biofuel distribution that drives down net industrial emissions by 75%, to highly durable 
-                aluminium architectural powder coating and anodizing, our operations are engineered to perform. 
-                We bridge the gap between traditional heavy industry requirements and the environmental demands of tomorrow.
+                From highly durable aluminium architectural powder coating and anodizing to modern interior
+                metalwork, our operations are engineered to perform for Odisha&apos;s builders and fabricators.
               </p>
             </div>
             
@@ -61,7 +60,7 @@ export default function About() {
             />
             <div className="absolute bottom-6 left-6 right-6 z-20 space-y-1">
               <h3 className="text-sm font-semibold text-white font-display">Odisha Processing Hub</h3>
-              <p className="text-xs text-slate-300">Integrated petrochemical logistics & powder coating plant</p>
+              <p className="text-xs text-slate-300">Integrated powder coating plant & quality lab</p>
             </div>
           </div>
         </section>
@@ -83,7 +82,7 @@ export default function About() {
             </h3>
             <div className="w-32 h-[3px] bg-orange-500 mx-auto shadow-[0_1px_6px_rgba(234,88,12,0.35)]" />
             <p className="text-slate-600 text-sm md:text-base font-medium max-w-2xl mx-auto relative z-10 pt-2">
-              Metafia specializes in powder coating and anodizing of aluminium — from Berhampur across Odisha with acid treatment, interior metalwork, and 24/7 shipment.
+              Metafia specializes in powder coating and anodizing of aluminium — from Berhampur across Odisha with acid treatment and interior metalwork.
             </p>
           </motion.div>
         </section>
@@ -123,8 +122,8 @@ export default function About() {
             </div>
             <p className="text-slate-700 italic text-base md:text-lg leading-relaxed font-semibold">
               "We believe that true industrial leadership is measured by both performance and stewardship. 
-              At Metafia Industries, our investments in B100 biofuel storage and precision aluminium machinery 
-              reflect our focus on delivery reliability. We operate not just as a supplier, but as a trusted 
+              At Metafia Industries, our investments in precision aluminium machinery and finishing lines
+              reflect our focus on quality and finish reliability. We operate not just as a supplier, but as a trusted
               long-term strategic partner for the nation's key infrastructure developers."
             </p>
             <div className="pt-4 border-t border-slate-100">
@@ -142,7 +141,7 @@ export default function About() {
               Regional Processing Facilities
             </h2>
             <p className="text-sm text-slate-500 font-semibold">
-              Take a visual tour inside our chemical storage tanks, powder spray booths, and quality check rooms.
+              Take a visual tour inside our powder spray booths, anodizing lines, and quality check rooms.
             </p>
           </div>
 
@@ -154,9 +153,9 @@ export default function About() {
                 desc: "Electrostatic paint curing area"
               },
               {
-                url: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=600&auto=format&fit=crop",
-                title: "Biofuel Tank Terminal",
-                desc: "B100 bulk storage silos"
+                url: "/images/aluimg/2.jpg",
+                title: "Anodizing Line",
+                desc: "Controlled oxide finishing bay"
               },
               {
                 url: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop",
@@ -164,9 +163,9 @@ export default function About() {
                 desc: "Surface thickness analysis"
               },
               {
-                url: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=600&auto=format&fit=crop",
-                title: "Dispatch Platform",
-                desc: "Fleet loading and cargo prep"
+                url: "/images/wd/1004.jpg",
+                title: "Interior Design Workshop",
+                desc: "Wood and metal interior fabrication"
               }
             ].map((facility, idx) => (
               <div key={idx} className="group relative h-[300px] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm">
@@ -194,7 +193,7 @@ export default function About() {
               Professional Board of Administration
             </h2>
             <p className="text-sm text-slate-500 font-semibold">
-              Guided by a high-caliber board with extensive backgrounds in chemical logistics, metallic engineering, and trade compliance.
+              Guided by a high-caliber board with extensive backgrounds in metallic engineering, project coordination, and trade compliance.
             </p>
           </div>
 
@@ -206,7 +205,7 @@ export default function About() {
               </div>
               <h3 className="font-extrabold text-slate-950 text-base font-display">Strategic Compliance</h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold">
-                Supervising rigorous environmental testing, biofuel quality inspections, and state pollution control regulatory compliance.
+                Supervising rigorous quality testing, coating inspections, and state pollution control regulatory compliance.
               </p>
             </div>
 
@@ -215,9 +214,9 @@ export default function About() {
               <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center border border-slate-200">
                 <Target className="w-4 h-4 text-slate-500" />
               </div>
-              <h3 className="font-extrabold text-slate-950 text-base font-display">Supply Chain Logistics</h3>
+              <h3 className="font-extrabold text-slate-950 text-base font-display">Client Project Support</h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold">
-                Managing bulk industrial fuel transit fleets, ensuring secure storage facilities, and maintaining 24/7 delivery timelines.
+                Coordinating technical specs, production schedules, and site-ready finishes for architects and fabricators.
               </p>
             </div>
 

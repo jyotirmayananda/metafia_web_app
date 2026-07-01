@@ -9,8 +9,6 @@ import {
   Sparkles,
   FlaskConical,
   Home,
-  Truck,
-  Fuel,
   Layers,
   Wheat,
 } from "lucide-react";
@@ -48,31 +46,9 @@ const PRODUCTS = [
     href: "/services#interior-design",
     accent: "orange",
   },
-  {
-    icon: Fuel,
-    title: "Wholesale Selling",
-    description:
-      "Bulk supply of LDO, MTO, MHO, and B100 biodiesel — proud distributors serving factories and logistics across Odisha.",
-    href: "/services#wholesale-selling",
-    accent: "amber",
-  },
-  {
-    icon: Truck,
-    title: "24/7 Shipment",
-    description:
-      "Dedicated round-the-clock tanker and transport fleet so fuel and industrial deliveries never stop.",
-    href: "/services#shipment-logistics",
-    accent: "blue",
-  },
 ];
 
 const DIVISIONS = [
-  {
-    icon: Fuel,
-    title: "Petrochemical Product",
-    line: "We are proud distributors of LDO, MTO & MHO",
-    href: "/biofuel",
-  },
   {
     icon: Layers,
     title: "Aluminum",
@@ -112,13 +88,12 @@ export default function OurProductsSection() {
             <span className="text-orange-700">Interior Design</span>
           </h2>
           <p className="text-slate-600 font-semibold text-sm md:text-base leading-relaxed">
-            Powder coating, anodizing, acid treatment, and interior aluminium work — plus petrochemical
-            supply and 24/7 shipment from Berhampur, Odisha.
+            Powder coating, anodizing, acid treatment, and interior aluminium work from Berhampur, Odisha.
           </p>
         </motion.div>
 
         {/* Three main divisions — from metafia.in homepage */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {DIVISIONS.map((item, idx) => {
             const Icon = item.icon;
             return (

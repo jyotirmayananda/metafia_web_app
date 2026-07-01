@@ -25,9 +25,8 @@ export default function Footer() {
             />
           </Link>
           <p className="text-sm leading-relaxed max-w-md text-slate-600 font-medium">
-            Powering industry, shaping metal, and accelerating transition towards clean energy.
-            Metafia Industries is a diversified industrial leader in biofuels, petrochemicals,
-            and premium aluminium treatments.
+            Powering industry and shaping metal with premium aluminium powder coating, anodizing,
+            and interior design solutions.
           </p>
           <div className="flex gap-4">
             <a
@@ -87,13 +86,13 @@ export default function Footer() {
             <li>
               <Link href="/services" className="hover:text-slate-900 transition-colors flex items-center gap-1 group">
                 <ArrowRight className="w-3 h-3 text-slate-400 opacity-0 group-hover:opacity-100 transition-all duration-200 -ml-4 group-hover:ml-0" />
-                Services
+                Aluminium Division
               </Link>
             </li>
             <li>
-              <Link href="/biofuel" className="hover:text-slate-900 transition-colors flex items-center gap-1 group">
+              <Link href="/agro" className="hover:text-slate-900 transition-colors flex items-center gap-1 group">
                 <ArrowRight className="w-3 h-3 text-slate-400 opacity-0 group-hover:opacity-100 transition-all duration-200 -ml-4 group-hover:ml-0" />
-                Biofuel Division
+                Agro Division
               </Link>
             </li>
             <li>

@@ -77,40 +77,6 @@ const SERVICES_DATA = [
     link: "/contact",
     localImage: true,
   },
-  {
-    id: "wholesale-selling",
-    badge: "Energy Distribution",
-    title: "Petrochemical Products — LDO, MTO & MHO",
-    description:
-      "Proud suppliers of Light Diesel Oil (LDO), Mineral Turpentine Oil (MTO), and Medium Heating Oil (MHO). Renewable diesel alternatives made from natural sources including vegetable oils and used cooking oils — bulk supply for Odisha industry.",
-    details: [
-      "Licensed distribution of LDO, MTO, and MHO",
-      "B100 biodiesel from vegetable oils and used cooking oil sources",
-      "Bulk pricing for factories, generators, and logistics fleets",
-      "Quality-tested supply with 24/7 shipment support",
-    ],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
-    linkText: "Explore Fuel Supply",
-    link: "/biofuel",
-    localImage: false,
-  },
-  {
-    id: "shipment-logistics",
-    badge: "Supply Chain",
-    title: "24/7 Shipment & Delivery",
-    description:
-      "Round-the-clock shipment for fuel and industrial deliveries across Odisha. Metafia operates dedicated tanker and transport capacity so your operations never wait on supply.",
-    details: [
-      "24/7 road tanker dispatch for petrochemical products",
-      "GPS-tracked fleet for fuel and bulk deliveries",
-      "Emergency reserve capacity for continuous plant operations",
-      "Serving Berhampur, southern Odisha, and regional industrial zones",
-    ],
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
-    linkText: "Setup Delivery Contract",
-    link: "/contact",
-    localImage: false,
-  },
 ];
 
 const TESTIMONIALS = [
@@ -151,7 +117,7 @@ export default function Services() {
               <span className="text-orange-700">Interior Design</span>
             </>
           }
-          description="Powder coating, anodizing, acid treatment, interior metalwork, wholesale fuel supply, and 24/7 shipment — from Metafia, Berhampur."
+          description="Powder coating, anodizing, acid treatment, and interior metalwork — from Metafia, Berhampur."
           centered
         />
 

@@ -54,7 +54,7 @@ export default function Contact() {
               <span className="text-amber-600 text-highlight">Metafia Industries.</span>
             </>
           }
-          description="Speak with our sales directors, technical anodizers, or biofuel logistics managers to optimize your project supply chain."
+          description="Speak with our sales directors and technical anodizers about your project requirements."
         />
 
         {/* Banner Image */}
@@ -136,9 +136,9 @@ export default function Contact() {
                       className="w-full bg-slate-50 border border-slate-200 focus:border-slate-400 focus:ring-1 focus:ring-slate-400 text-slate-800 text-sm px-4 py-3 rounded-lg outline-none transition-colors"
                     >
                       <option value="General Inquiry">General Corporate Inquiry</option>
-                      <option value="Biofuel Distribution">Biofuel / Petrochemical Quote</option>
                       <option value="Aluminium Finishing">Aluminium Anodizing / Coating</option>
-                      <option value="Logistics Careers">Logistics & Carriage</option>
+                      <option value="Interior Design">Interior Design & Metalwork</option>
+                      <option value="Agro Inquiry">Agro Products Inquiry</option>
                     </select>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full bg-slate-50 border border-slate-200 focus:border-slate-400 focus:ring-1 focus:ring-slate-400 text-slate-800 text-sm px-4 py-3 rounded-lg outline-none transition-colors resize-none"
-                    placeholder="Describe your structural finishing spec or fuel volumes requested..."
+                    placeholder="Describe your structural finishing spec or project requirements..."
                   />
                 </div>
 
@@ -230,8 +230,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-slate-900 text-sm">Operating Hours</h4>
                     <p className="text-xs text-slate-500 mt-1 font-semibold">
-                      Monday &ndash; Saturday: 09:00 AM &ndash; 06:30 PM<br />
-                      (24/7 Fleet Dispatch Operations)
+                      Monday &ndash; Saturday: 09:00 AM &ndash; 06:30 PM
                     </p>
                   </div>
                 </li>

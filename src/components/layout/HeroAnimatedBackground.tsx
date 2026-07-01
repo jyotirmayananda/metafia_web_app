@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-const HERO_IMAGE = "/images/hero-industrial-bg.png";
+const HERO_IMAGE = "/images/hero-aluminium-generated.png";
 
 export default function HeroAnimatedBackground() {
   const prefersReducedMotion = useReducedMotion();
@@ -61,12 +61,12 @@ export default function HeroAnimatedBackground() {
             src={HERO_IMAGE}
             alt=""
             decoding="async"
-            className="absolute left-[-8%] top-[-8%] h-[116%] w-[116%] max-w-none object-cover object-center opacity-40 blur-[2px]"
+            className="absolute left-[-8%] top-[-8%] h-[116%] w-[116%] max-w-none object-cover object-center opacity-35 blur-[3px]"
           />
         </motion.div>
 
         {/* Top-center scrim so headline & subtitle stay readable */}
-        <div className="absolute top-0 left-0 right-0 h-[55%] bg-gradient-to-b from-white/55 via-white/30 to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-[58%] bg-gradient-to-b from-white/75 via-white/45 to-transparent" />
 
         {/* Subtle readability overlay — image stays visible */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/10 via-slate-900/5 to-[#f8fafc]/75 md:from-slate-900/15 md:via-transparent md:to-[#f8fafc]/85" />
@@ -79,7 +79,7 @@ export default function HeroAnimatedBackground() {
               : { opacity: [0.04, 0.12, 0.06, 0.04] }
           }
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute inset-0 bg-gradient-to-tr from-amber-300/20 via-transparent to-blue-400/10"
+          className="absolute inset-0 bg-gradient-to-tr from-orange-300/15 via-transparent to-blue-400/10"
         />
 
         {/* Soft amber sheen instead of heavy white sweep */}
