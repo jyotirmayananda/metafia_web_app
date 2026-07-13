@@ -7,13 +7,16 @@ interface SectionHeadingProps {
   title: ReactNode;
   description?: string;
   centered?: boolean;
+  level?: "h1" | "h2";
 }
 
 export default function SectionHeading({
   title,
   description,
   centered = false,
+  level = "h2",
 }: SectionHeadingProps) {
+  const HeadingTag = level;
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -22,9 +25,9 @@ export default function SectionHeading({
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       className={`max-w-3xl space-y-4 mb-16 ${centered ? "mx-auto text-center" : ""}`}
     >
-      <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight font-display">
+      <HeadingTag className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight font-display">
         {title}
-      </h2>
+      </HeadingTag>
       
       {description && (
         <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto font-sans">

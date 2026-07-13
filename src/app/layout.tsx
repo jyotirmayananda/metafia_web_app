@@ -20,6 +20,22 @@ export const metadata: Metadata = {
   title: "Metafia Industries | Powering Industry. Shaping Metal. Aluminium Solutions",
   description: "Metafia Industries Pvt Ltd is a diversified industrial leader based in Odisha, India, specializing in precision aluminium powder coating, anodizing, interior metalwork, and agro products.",
   metadataBase: new URL("https://metafiaindustries.com"),
+  keywords: [
+    "Aluminium Powder Coating",
+    "Aluminium Anodizing",
+    "Odisha",
+    "Berhampur",
+    "Metalwork",
+    "Agro products",
+    "Metafia Industries",
+    "Architectural coating",
+    "Acid pre-treatment",
+    "Interior design",
+    "Ganjam",
+  ],
+  authors: [{ name: "Metafia Industries", url: "https://metafiaindustries.com" }],
+  creator: "Metafia Industries",
+  publisher: "Metafia Industries",
   openGraph: {
     title: "Metafia Industries | Aluminium Coating & Interior Design Solutions",
     description: "Architectural aluminium powder coating, anodizing, acid treatment, interior metalwork, and agro products from Berhampur, Odisha.",
@@ -27,10 +43,31 @@ export const metadata: Metadata = {
     siteName: "Metafia Industries",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/images/hero-aluminium-generated.png",
+        width: 1200,
+        height: 630,
+        alt: "Metafia Industries | Aluminium Powder Coating & Anodizing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Metafia Industries | Aluminium Coating & Interior Design Solutions",
+    description: "Architectural aluminium powder coating, anodizing, acid treatment, interior metalwork, and agro products from Berhampur, Odisha.",
+    images: ["/images/hero-aluminium-generated.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
