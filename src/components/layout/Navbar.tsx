@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -50,15 +49,19 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="relative z-50 flex items-center group">
-            <Image
+          {/* Logo — full horizontal lockup */}
+          <Link
+            href="/"
+            className="relative z-50 flex items-center shrink-0 overflow-visible group"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/images/logo.png"
               alt="Metafia Industries Logo"
-              width={144}
-              height={45}
-              className="object-contain h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-102"
-              priority
+              width={776}
+              height={226}
+              className="h-12 md:h-14 w-auto max-h-14 object-contain object-left select-none"
+              draggable={false}
             />
           </Link>
 

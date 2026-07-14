@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 import FooterAnimatedBackground from "@/components/layout/FooterAnimatedBackground";
 
@@ -15,13 +14,15 @@ export default function Footer() {
       <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         {/* Company Intro */}
         <div className="md:col-span-2 space-y-6">
-          <Link href="/" className="inline-block">
-            <Image
+          <Link href="/" className="inline-block overflow-visible">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/images/logo.png"
               alt="Metafia Industries Logo"
-              width={144}
-              height={45}
-              className="object-contain h-12 md:h-14 w-auto opacity-95 hover:opacity-100 transition-opacity duration-300"
+              width={776}
+              height={226}
+              className="h-14 w-auto object-contain object-left opacity-95 hover:opacity-100 transition-opacity duration-300 select-none"
+              draggable={false}
             />
           </Link>
           <p className="text-sm leading-relaxed max-w-md text-slate-600 font-medium">

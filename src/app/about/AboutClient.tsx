@@ -100,11 +100,11 @@ export default function AboutClient() {
               </div>
               <div className="w-16 h-16 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo-mark.png"
                   alt="Metafia Industries"
                   width={48}
-                  height={48}
-                  className="object-contain w-10 h-10 opacity-90"
+                  height={32}
+                  className="object-contain w-10 h-8 opacity-90"
                 />
               </div>
             </div>
